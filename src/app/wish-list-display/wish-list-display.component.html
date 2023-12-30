@@ -1,4 +1,7 @@
 @for (item of disWishArr; track $index) {
+    <!-- @if (item.completed) {<input type="checkbox" (click)="toggleStatus(item);" checked> }
+    @else {<input type="checkbox" (click)="toggleStatus(item);"> } -->
+    <input type="checkbox" (click)="toggleStatus(item);" [checked]="item.completed">
 <span>{{item.wishtext}}</span><br>
 } @empty {
 <span>empty</span>

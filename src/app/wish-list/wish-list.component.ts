@@ -11,7 +11,7 @@ import { WishListInputComponent } from '../wish-list-input/wish-list-input.compo
   styleUrl: './wish-list.component.scss'
 })
 export class WishListComponent {
-  wishArr : wishItem[] = [new wishItem("big pee pee", true), new wishItem("small pee pee", false), new wishItem("no pee pee", true)];
+  wishArr : wishItem[] = [new wishItem("big pee pee", false), new wishItem("small pee pee", false), new wishItem("no pee pee", true)];
 
 
 }

@@ -10,4 +10,9 @@ import { wishItem } from '../../shared/wishitem';
 })
 export class WishListDisplayComponent {
   @Input() disWishArr : wishItem[] = [];
+
+  toggleStatus(item : wishItem){
+    item.completed = !item.completed;
+    console.log(item);
+  }
 }
